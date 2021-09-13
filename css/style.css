@@ -1,0 +1,324 @@
+/* @font-face {
+    font-family: 'SFUIText';
+    src: url('../fonts/sf-ui-text-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sf-ui-text-regular.woff') format('woff'),
+         url('../fonts/sf-ui-text-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+  font-family: "SF Pro Bold";
+  src: url("../fonts/SFProDisplay-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../fonts/SFProDisplay-Regular.ttf");
+}
+
+/* "../fonts/SourceSansPro-SemiBold.ttf"
+"../fonts/SourceSansPro-Bold.ttf" */
+
+.section_header {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section_header::after {
+  display: block;
+  content: "";
+  width: 1440px;
+  height: 1px;
+  background-color: #e7e7f2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.header_desc1 {
+  position: absolute;
+  width: 51px;
+  height: 21px;
+  left: 240px;
+  top: 45px;
+
+  font-family: "SFProDisplay-Regular";
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+  /* 
+    -webkit-text-stroke: 0.5px  #000000; */
+  text-decoration: none;
+}
+
+.header_desc2 {
+  position: absolute;
+  width: 68px;
+  height: 21px;
+  left: 351px;
+  top: 45px;
+
+  font-family: "SFProDisplay-Regular";
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+.header_desc3 {
+  position: absolute;
+  width: 271px;
+  height: 29px;
+  left: 824px;
+  top: 42px;
+
+  font-family: "SFProDisplay-Regular";
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header_desc4 {
+  position: absolute;
+  width: 58px;
+  height: 21px;
+  left: 1391px;
+  top: 45px;
+
+  font-family: "SFProDisplay-Regular";
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header_desc5 {
+  position: absolute;
+  width: 67px;
+  height: 21px;
+  left: 1509px;
+  top: 45px;
+
+  font-family: "SFProDisplay-Regular";
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+.header_desc6 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 1656px;
+  top: 44px;
+  background: url(../img/search-line\ \(1\)\ 2.svg);
+}
+
+.intro {
+  background: url(../img/background.png) no-repeat center;
+  background-size: cover;
+  width: 1920px;
+  height: 1089px;
+}
+
+.intro_title {
+  /* Beatiful Places of England */
+  position: absolute;
+  width: 860px;
+  height: 212px;
+  left: 240px;
+  top: 360px;
+  font-family: "SF Pro Bold";
+  font-size: 96px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+
+.intro_desc {
+  position: absolute;
+  width: 860px;
+  height: 84px;
+  left: 240px;
+  top: 604px;
+
+  font-family: "SFProDisplay-Regular";
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+
+  color: #ffffff;
+
+  opacity: 0.8;
+}
+
+.view {
+  position: absolute;
+  width: 570px;
+  height: 400px;
+  left: 1350px;
+  top: 314px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(70px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px 0px 0px 16px;
+}
+
+.view_up_text {
+  /* width: 69px;
+    height: 20px; */
+  padding: 48px 60px 36px 36px;
+  padding-bottom: 36px;
+  font-family: SF Pro Display;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.view_title {
+  /* padding: 36px 36px 36px 36px; */
+  padding-left: 36px;
+  padding-bottom: 87px;
+  font-family: "SF Pro Bold";
+
+  font-size: 36px;
+  line-height: 135%;
+  color: #ffffff;
+}
+.view_more {
+  background: url(../img/Vector.svg) no-repeat left;
+  margin-left: 36px;
+  position: absolute;
+  width: 43px;
+  height: 44px;
+}
+
+.view_pic {
+  background: url(../img/andrew-ridley-RwfWSH6Xq0M-unsplash-mintmp.png)
+    no-repeat right;
+  width: 285px;
+  height: 400px;
+}
+
+.book {
+  position: absolute;
+  left: 12.5%;
+  right: 12.5%;
+  top: 81.39%;
+  bottom: 0%;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(70px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px 20px 0px 0px;
+}
+.book_title {
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 48px;
+  font-family: "SF Pro Bold";
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+}
+
+.panel {
+  display: grid;
+
+  grid-template-columns: 463px 201px 191px 266px;
+}
+
+.panel_table {
+  position: absolute;
+  width: 1074px;
+  height: 72px;
+  margin: 73px 318px 56px 48px;
+
+  opacity: 0.3;
+  border: 1px solid #e7e7f2;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.book_pic {
+  background: url(../img/home-line.png) no-repeat left;
+  height: 28px;
+  margin-left: 22px;
+}
+
+.grid-container {
+  margin: 73px 318px 56px 48px;
+  display: grid;
+  grid-template-columns: 463px 191px 191px 266px;
+  width: 1074px;
+  height: 72px;
+  border: 1px solid #e7e7f2;
+  border-radius: 10px;
+}
+.grid-container > div {
+  text-align: left;
+  padding: 20px 0;
+}
+
+.grid-container > .grid-container__item {
+  border-left: 1px solid #e7e7f2;
+}
+
+.item1 {
+  left: 17.76%;
+  right: 76.46%;
+  top: 89.54%;
+  bottom: 9.17%;
+
+  font-family: "SF Pro Bold";
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  color: #e7e7f2;
+  opacity: 0.6;
+}
+
+.btn_book {
+  /* position: absolute; */
+  width: 240px;
+  height: 72px;
+  left: 1395px;
+  top: 944px;
+
+  background: #91cb82;
+  border-radius: 10px;
+}
